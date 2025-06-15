@@ -65,7 +65,6 @@ def print_results(results, sizes):
         tim = f"{results['Timsort (sorted)'][i]:.6f}"
         print(f"{size:>10} | {merge:>12} | {insert:>15} | {tim:>10}")
 
-# --- Запуск ---
 sizes = [100, 500, 1000, 5000]
 results = benchmark_sorting_algorithms(sizes)
 print_results(results, sizes)
